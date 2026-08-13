@@ -8,7 +8,7 @@ COMMON_ARGS=(
   --rm
   -it
   --name chromium4devcontainer
-  -p 127.0.0.1:9223:9223
+  -p 0.0.0.0:9223:9223
   --cap-add=SYS_ADMIN
   --shm-size=1g
 )

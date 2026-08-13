@@ -55,9 +55,7 @@ http {
             proxy_pass http://127.0.0.1:9222;
             proxy_http_version 1.1;
 
-            # Ponecháme původní Host. Pro localhost/IP tak Chromium
-            # vrací websocketDebuggerUrl rovnou s portem 9223.
-            proxy_set_header Host $http_host;
+            proxy_set_header Host 127.0.0.1:9222;
 
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "upgrade";

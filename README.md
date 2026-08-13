@@ -5,7 +5,7 @@ An isolated Chromium browser designed for AI agents running inside development c
 When started, this project launches Chromium inside a dedicated Docker container. The browser exposes its Chrome DevTools Protocol (CDP) endpoint through:
 
 ```text
-127.0.0.1:9223
+0.0.0.0:9223
 ```
 
 AI agents can connect to this browser from another devcontainer and control it using tools such as Playwright.
