@@ -11,6 +11,7 @@ COMMON_ARGS=(
   -p 0.0.0.0:9223:9223
   --cap-add=SYS_ADMIN
   --shm-size=1g
+  --add-host=host.docker.internal:host-gateway
 )
 
 # GPU support

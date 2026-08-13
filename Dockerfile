@@ -12,6 +12,8 @@ RUN apt-get update \
         nginx \
         ca-certificates \
         fonts-liberation \
+        curl \
+        iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
 # UID/GID je vhodné mít stejné jako uživatel na hostu,
